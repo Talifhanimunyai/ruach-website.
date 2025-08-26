@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUACH EARTH WORX (PTY) LTD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset & Fonts */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+        body { background-color: #f9f7e8; color: #333; line-height: 1.6; }
+
+        /* Header */
+        header {
+            background: #623e87;
+            color: #f9f7e8;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        header .logo-title {
+            display: flex;
+            align-items: center;
+        }
+        header img {
+            height: 80px;
+        }
+        header h1 {
+            margin-left: 15px;
+            font-size: 32px;
+        }
+        header .search-bar {
+            margin-top: 15px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        header .search-bar input[type="text"] {
+            width: 60%;
+            padding: 12px 20px;
+            border-radius: 25px 0 0 25px;
+            border: 2px solid #adcc38;
+            font-size: 16px;
+            outline: none;
+        }
+        header .search-bar button {
+            padding: 12px 25px;
+            border-radius: 0 25px 25px 0;
+            border: none;
+            background-color: #adcc38;
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        header .search-bar button:hover {
+            background-color: #623e87;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(98,62,135,0.6), rgba(98,62,135,0.6)), url('https://images.unsplash.com/photo-1592928301936-50e1bfe27f4c?fit=crop&w=1920&q=80') no-repeat center center/cover;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #f9f7e8;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+        }
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            max-width: 700px;
+            text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+        }
+        .hero .btn {
+            padding: 12px 30px;
+            margin: 5px;
+            border-radius: 25px;
+            border: 2px solid #adcc38;
+            background-color: transparent;
+            color: #f9f7e8;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .hero .btn:hover {
+            background-color: #adcc38;
+            color: #623e87;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            color: #623e87;
+            margin-bottom: 40px;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .service-card {
+            background: rgba(255,255,255,0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            padding: 30px;
+            flex: 1 1 300px;
+            min-width: 280px;
+            transition: 0.3s;
+        }
+        .service-card:hover {
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+        }
+        .service-card h3 {
+            color: #adcc38;
+            margin-bottom: 15px;
+        }
+        .service-card ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background: #623e87;
+            color: #f9f7e8;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        footer a {
+            color: #adcc38;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px){
+            .hero h2 { font-size: 36px; }
+            .hero p { font-size: 18px; }
+            header .search-bar input[type="text"] { width: 80%; }
+            .services { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="logo-title">
+        <img src="Images/Log.png" alt="RUACH EARTH WORX Logo">
+        <h1>RUACH EARTH WORX (PTY) LTD</h1>
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button onclick="performSearch()">Search</button>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<div class="hero">
+    <div>
+        <h2>Electrical, Plumbing & Civil Solutions</h2>
+        <p>Delivering high-quality, sustainable, and cost-effective solutions to residential, commercial, and industrial clients across South Africa.</p>
+        <button class="btn">Our Services</button>
+        <button class="btn">Contact Us</button>
+    </div>
+</div>
+
+<!-- About Section -->
+<section>
+    <h2 class="section-title">Company Overview</h2>
+    <p>RUACH EARTH WORX (PTY) LTD is a proudly South African company specialising in electrical engineering, plumbing, and general construction solutions. We are committed to delivering high-quality, sustainable, and cost-effective service to residential, commercial, and industrial clients. Our company is driven by innovation, technical expertise, and a passion for excellence, whether it’s designing, installing, or maintaining systems. RUACH EARTH WORX ensures safety, efficiency, and reliability in every project.</p>
+</section>
+
+<!-- Vision & Mission -->
+<section>
+    <h2 class="section-title">Vision & Mission</h2>
+    <p><strong>Vision:</strong> To be a trusted leader in providing reliable and innovative electrical and plumbing solutions across the world.</p>
+    <p><strong>Mission:</strong></p>
+    <ul>
+        <li>Deliver professional services with integrity and excellence.</li>
+        <li>Ensure customer satisfaction through quality workmanship.</li>
+        <li>Empower communities through sustainable projects and job creation.</li>
+        <li>Adopt modern technologies for efficiency and safety.</li>
+    </ul>
+</section>
+
+<!-- Services Section -->
+<section>
+    <h2 class="section-title">Core Services</h2>
+    <div class="services">
+        <div class="service-card">
+            <h3>Electrical Engineering</h3>
+            <ul>
+                <li>Residential, commercial, and industrial wiring</li>
+                <li>Power installations, distribution systems</li>
+                <li>Backup power solutions, generators, inverters, solar systems</li>
+                <li>Fault finding and maintenance</li>
+                <li>Electrical compliance certification</li>
+            </ul>
+        </div>
+        <div class="service-card">
+            <h3>Plumbing Services</h3>
+            <ul>
+                <li>Water supply and reticulation systems</li>
+                <li>Drainage installations and maintenance</li>
+                <li>Geyser installations and repairs</li>
+                <li>Leak detection and pipe replacement</li>
+                <li>Plumbing compliance certificates</li>
+            </ul>
+        </div>
+        <div class="service-card">
+            <h3>Civil & General Works</h3>
+            <ul>
+                <li>Excavation and trenching</li>
+                <li>Earth moving and ground work</li>
+                <li>Piping networks</li>
+                <li>General construction support</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p><strong>Contact Person:</strong> Albert Mudzusi</p>
+    <p>354 Second Avenue, Capital Park, Pretoria, Gauteng 0084, South Africa</p>
+    <p>Phone: 076 055 2285 | 063 425 9793 | 079 739 3406</p>
+    <p>Email: <a href="mailto:albertmudzusi@gmail.com">albertmudzusi@gmail.com</a></p>
+    <p>&copy; 2025 RUACH EARTH WORX (PTY) LTD. All rights reserved.</p>
+</footer>
+
+<script>
+    function performSearch() {
+        const query = document.querySelector('header input[type="text"]').value;
+        if(query) {
+            alert('Searching for: ' + query);
+        } else {
+            alert('Please enter a search term.');
+        }
+    }
+</script>
+
+</body>
+</html>
